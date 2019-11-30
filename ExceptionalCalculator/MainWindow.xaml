@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExceptionalCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Exceptional Calculator" Height="450" Width="800">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -22,28 +22,29 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox TextWrapping="Wrap" Text="TextBox" Grid.ColumnSpan="4"/>
-            <Button Content="Button" Grid.Row="1"/>
-            <Button Content="Button" Grid.Row="3"/>
-            <Button Content="Button" Grid.Row="2"/>
-            <Button Content="Button" Grid.Row="4"/>
-            <Button Content="Button" Grid.Row="1" Grid.Column="1"/>
-            <Button Content="Button" Grid.Row="2" Grid.Column="1"/>
-            <Button Content="Button" Grid.Row="3" Grid.Column="1"/>
-            <Button Content="Button" Grid.Row="4" Grid.Column="1"/>
-            <Button Content="Button" Grid.Row="1" Grid.Column="2"/>
-            <Button Content="Button" Grid.Row="2" Grid.Column="2"/>
-            <Button Content="Button" Grid.Row="3" Grid.Column="2"/>
-            <Button Content="Button" Grid.Row="4" Grid.Column="2"/>
-            <Button Content="Button" Grid.Row="1" Grid.Column="3"/>
-            <Button Content="Button" Grid.Row="2" Grid.Column="3"/>
-            <Button Content="Button" Grid.Row="3" Grid.Column="3"/>
-            <Button Content="Button" Grid.Row="4" Grid.Column="3"/>
+            <TextBox x:Name="Value" TextWrapping="Wrap" TextAlignment="Right" Text="0" FontSize="50" Grid.ColumnSpan="4" />
+            <Button x:Name="CE"  Content="CE" FontSize="25" Grid.Row="1" Click="CE_Click"/>
+            <Button x:Name="Four" Content="4" FontSize="25" Grid.Row="3" Click="Four_Click"/>
+            <Button x:Name="Seven" Content="7" FontSize="25" Grid.Row="2" Click="Seven_Click"/>
+            <Button x:Name="One" Content="1" FontSize="25" Grid.Row="4" Click="One_Click"/>
+            <Button x:Name="C" Content="C" FontSize="25" Grid.Row="1" Grid.Column="1" Click="C_Click"/>
+            <Button x:Name="Eight" Content="8" FontSize="25" Grid.Row="2" Grid.Column="1" Click="Eight_Click"/>
+            <Button x:Name="Five" Content="5" FontSize="25" Grid.Row="3" Grid.Column="1" Click="Five_Click"/>
+            <Button x:Name="Two" Content="2" FontSize="25" Grid.Row="4" Grid.Column="1" Click="Two_Click"/>
+            <Button x:Name="Inverse" Content="1/X" FontSize="25" Grid.Row="1" Grid.Column="2" Click="Inverse_Click"/>
+            <Button x:Name="Nine" Content="9" FontSize="25" Grid.Row="2" Grid.Column="2" Click="Nine_Click"/>
+            <Button x:Name="Six" Content="6" FontSize="25" Grid.Row="3" Grid.Column="2" Click="Six_Click"/>
+            <Button x:Name="Three" Content="3" FontSize="25" Grid.Row="4" Grid.Column="2" Click="Three_Click"/>
+            <Button x:Name="Divide" Content="/" FontSize="25" Grid.Row="1" Grid.Column="3" Click="Divide_Click"/>
+            <Button x:Name="Multiply" Content="*" FontSize="25" Grid.Row="2" Grid.Column="3" Click="Multiply_Click"/>
+            <Button x:Name="Minus" Content="-" FontSize="25" Grid.Row="3" Grid.Column="3" Click="Minus_Click"/>
+            <Button x:Name="Plus" Content="+" FontSize="25" Grid.Row="4" Grid.Column="3" Click="Plus_Click"/>
+            <Button x:Name="Sign" Content="+/-" FontSize="25" Grid.Row="5" Grid.Column="0" Click="Sign_Click"/>
+            <Button x:Name="_0" Content="0" FontSize="25" Grid.Row="5" Grid.Column="1" Click="_0_Click"/>
+            <Button x:Name="Dot" Content="." FontSize="25" Grid.Row="5" Grid.Column="2" Click="Dot_Click"/>
+            <Button x:Name="Equal" Content="=" FontSize="25" Grid.Row="5" Grid.Column="3" Click="Equal_Click"/>
         </Grid>
-        <Button Content="Button" Margin="0,349,594,0"/>
-        <Button Content="Button" Margin="198,349,396,0"/>
-        <Button Content="Button" Margin="396,349,198,0"/>
-        <Button Content="Button" Margin="594,349,0,0"/>
+
 
     </Grid>
 </Window>
