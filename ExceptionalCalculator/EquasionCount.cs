@@ -11,7 +11,7 @@ namespace ExceptionalCalculator
         string equasion;
         public EquasionCount()
         {
-
+            //todo joking
         }
 
         public void InsertEquasion(string equasion)
